@@ -23,6 +23,7 @@ private ProductDao productDao;
    @RequestMapping("/")
     public  String home(Model m)
     {
+       //   System.ot.println("hiiiiiiiiiiiiii");
         List<Product>products =productDao.getProducts();
         m.addAttribute("products",products);
         return "index";
